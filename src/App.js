@@ -1,7 +1,6 @@
 import logo from "./logo.svg";
 import Theme from "./Theme";
 import "./App.css";
-
 function App() {
   return (
     <Theme>
