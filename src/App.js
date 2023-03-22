@@ -1,24 +1,12 @@
 import logo from "./logo.svg";
 import Theme from "./Theme";
+import Hero from "./components/Hero/Hero";
 import "./App.css";
 function App() {
   return (
     <Theme>
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+       <Hero hero='About Us'></Hero>
       </div>
     </Theme>
   );
