@@ -25,7 +25,7 @@ function SocialStack() {
   return (
     <SocialStackWrapper>
       {icons.map((icon) => (
-        <a href="/">
+        <a href="/" key={icon.name}>
           <img src={icon.url} alt={icon.name} />
         </a>
       ))}
