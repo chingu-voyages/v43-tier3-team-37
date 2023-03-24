@@ -91,6 +91,7 @@ const NewsletterRegister = styled.div`
     padding: 1rem;
     border: none;
     color: #fff;
+    border-radius: 0;
     background: transparent;
     border: 1px solid ${({ theme }) => theme.colors.gray};
     font-family: ${({ theme }) => theme.fonts[2]};
