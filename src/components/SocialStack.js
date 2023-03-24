@@ -12,6 +12,10 @@ const SocialStackWrapper = styled.div`
 
   & > * {
     width: 20px;
+    transition: transform 200ms ease-in-out;
+    &:hover {
+      transform: scale(1.2);
+    }
   }
 `;
 

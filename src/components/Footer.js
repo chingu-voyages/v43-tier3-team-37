@@ -101,7 +101,11 @@ const NewsletterRegister = styled.div`
   button {
     border: none;
     background-color: #fff;
+    cursor: pointer;
     padding: 1rem 3rem;
+    &:hover {
+      opacity: 0.9;
+    }
   }
 `;
 

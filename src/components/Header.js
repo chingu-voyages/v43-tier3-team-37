@@ -62,6 +62,11 @@ const CartSection = styled.div`
 
   & .icon {
     width: 24px;
+    transition: transform 200ms;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.1);
+    }
   }
   @media screen and (min-width: 768px) {
     display: flex;
