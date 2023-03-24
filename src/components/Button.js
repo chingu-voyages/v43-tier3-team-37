@@ -10,7 +10,7 @@ const Button = ({content}) => {
 
 const StyledButton = styled.button`
 
-background-color: #fffff;
+background-color: #E1B168;
 color: #292E36;
 border-color: #ffff;
 border: 1px;
