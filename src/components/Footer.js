@@ -32,7 +32,7 @@ const FooterContainer = styled.div`
   }
 
   p {
-    line-height: 1.8;
+    line-height: 1.6;
   }
 
   .bottom {
@@ -129,7 +129,11 @@ function Footer() {
             <p>
               <span className="accent-text">Call</span> - +33 156 78 89 56
             </p>
-            <p>benoit@mail.com</p>
+            <p>
+              <a href="mailto:benoit@mail.com" className="accent-text">
+                benoit@mail.com
+              </a>
+            </p>
             <br />
             <div className="socials">
               <SocialStack />
@@ -142,7 +146,7 @@ function Footer() {
             <p>Get news & offers events.</p>
 
             <form>
-              <input type="email" placeholder="Email" />
+              <input type="email" required placeholder="Email" />
 
               <button>Subscribe</button>
             </form>
@@ -151,10 +155,17 @@ function Footer() {
           <WorkingHours>
             <h3>working hours</h3>
 
-            <p>Mon – Fri: 7.00am – 6.00pm</p>
+            <p>
+              <span className="accent-text">Mon-Fri</span>: 7.00am – 6.00pm
+            </p>
 
-            <p>Sun: 8.00am – 6.00pm</p>
-            <p>benoit@mail.com</p>
+            <p>
+              <span className="accent-text">Sat</span>: 7.00am – 6.00pm
+            </p>
+
+            <p>
+              <span className="accent-text">Sun</span>: 8.00am – 6.00pm
+            </p>
           </WorkingHours>
         </div>
       </FooterContainer>

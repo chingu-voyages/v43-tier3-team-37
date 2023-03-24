@@ -21,15 +21,18 @@ const HeaderTop = styled.div`
   padding-bottom: 2rem;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
   align-items: center;
   @media screen and (min-width: 768px) {
     justify-content: space-between;
+    flex-direction: row;
   }
 `;
 
 const HeaderTopLeft = styled.div`
   display: none;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1024px) {
     display: block;
   }
 `;
@@ -55,7 +58,7 @@ const CartSection = styled.div`
   display: flex;
   align-items: center;
   gap: 1rem;
-  display: none;
+  /* display: none; */
 
   & .icon {
     width: 24px;
