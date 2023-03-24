@@ -20,8 +20,18 @@ const HeaderTop = styled.div`
   padding-top: 2rem;
   padding-bottom: 2rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  @media screen and (min-width: 768px) {
+    justify-content: space-between;
+  }
+`;
+
+const HeaderTopLeft = styled.div`
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
 `;
 const HeaderBottom = styled.div`
   border-top: 1px solid ${({ theme }) => theme.colors.gray};
@@ -30,7 +40,11 @@ const HeaderBottom = styled.div`
 `;
 
 const LogoContainer = styled.div`
-  max-width: 250px;
+  max-width: 200px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 250px;
+  }
 
   & img {
     width: 100%;
@@ -41,9 +55,13 @@ const CartSection = styled.div`
   display: flex;
   align-items: center;
   gap: 1rem;
+  display: none;
 
   & .icon {
     width: 24px;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
   }
 `;
 
@@ -51,7 +69,18 @@ const Navbar = styled.nav`
   color: #fff;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    justify-content: space-between;
+  }
+
+  & .socials {
+    display: none;
+    @media screen and (min-width: 768px) {
+      display: block;
+    }
+  }
 `;
 
 const NavMenu = styled.div`
@@ -65,7 +94,10 @@ function Header() {
     <MainHeader>
       <HeaderWrapper>
         <HeaderTop>
-          <TertiaryButton size="14px">Call - 987 654 321</TertiaryButton>
+          <HeaderTopLeft>
+            <TertiaryButton size="14px">Call - 987 654 321</TertiaryButton>
+          </HeaderTopLeft>
+
           <LogoContainer>
             <img src={logoImg} alt="restaurant logo" />
           </LogoContainer>
@@ -89,8 +121,9 @@ function Header() {
               <a href="/">Menu</a>
               <a href="/">Contact</a>
             </NavMenu>
-
-            <SocialStack />
+            <div className="socials">
+              <SocialStack />
+            </div>
           </Navbar>
         </HeaderWrapper>
       </HeaderBottom>
