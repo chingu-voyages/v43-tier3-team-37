@@ -1,14 +1,21 @@
 import Theme from "./Theme";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import SignIn from "./components/SignIn";
+import Register from "./components/Register";
 
-import SignIn from "./components/SignIn"
 
 import "./App.css";
 function App() {
   return (
     <Theme>
-      <div className="App">
-       <SignIn />
-      </div>
+       <Router>
+       
+          <Routes>
+            <Route path='/signin' element={<SignIn />}></Route>
+            <Route path='/register' element={<Register/>}></Route>
+          </Routes>
+       
+      </Router>
     </Theme>
   );
 }

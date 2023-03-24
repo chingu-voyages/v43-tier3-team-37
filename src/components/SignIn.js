@@ -3,10 +3,16 @@ import "../styles/SignIn.css"
 import styled from 'styled-components'
 import Input from './Input'
 import Button from './Button'
+import { useNavigate } from "react-router-dom";
 
 
 const SignIn = () => {
    
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+     navigate("/register");
+  };
 
   return (
     <MainContainer>
@@ -16,7 +22,7 @@ const SignIn = () => {
         <Input type="password" placeholder="Password" />
       </InputContainer>
       <ButtonContainer><Button content="sign in"/></ButtonContainer>
-      <LastText>Don't have an account? Register</LastText>
+      <LastText>Don't have an account? <LinkText onClick={handleClick}>Register</LinkText></LastText>
       
 
     </MainContainer>
@@ -75,7 +81,8 @@ margin: 0 0 2rem 0;
 
 const LinkText = styled.a`
 
-color: yellow;
+color: #E1B168;
+cursor: pointer;
 `
 
 
