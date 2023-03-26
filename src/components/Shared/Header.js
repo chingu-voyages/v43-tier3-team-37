@@ -1,10 +1,10 @@
 import React from "react";
 
 import styled from "styled-components";
-import { TertiaryButton, PrimaryButton } from "../styles/ThemeButton.styled";
-import logoImg from "../assets/images/logo.png";
-import cartIcon from "../assets/icons/cart.png";
-import userIcon from "../assets/icons/user.png";
+import { TertiaryButton, PrimaryButton } from "../../styles/ThemeButton.styled";
+import logoImg from "../../assets/images/logo.png";
+import cartIcon from "../../assets/icons/cart.png";
+import userIcon from "../../assets/icons/user.png";
 import SocialStack from "./SocialStack";
 const MainHeader = styled.header`
   background-color: ${({ theme }) => theme.colors.darkgray};

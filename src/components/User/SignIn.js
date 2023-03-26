@@ -1,9 +1,6 @@
 import React from 'react'
-import "../styles/SignIn.css"
 import styled from 'styled-components'
 import Input from './Input'
-import Button from './Button'
-
 
 const SignIn = () => {
    
@@ -15,7 +12,7 @@ const SignIn = () => {
         <Input type="text" placeholder="Email"/>
         <Input type="password" placeholder="Password" />
       </InputContainer>
-      <ButtonContainer><Button content="sign in"/></ButtonContainer>
+      <ButtonContainer></ButtonContainer>
       <LastText>Don't have an account? Register</LastText>
       
 
@@ -32,12 +29,9 @@ height: 60vh;
 width: 30vw;
 background-color: #292E36;
 box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-background-filter: blur(8.5px);
 border-radius: 10px;
 color: #ffffff;
 text-transform: uppercase;
-font-spoting: 0.4em;
-
 `;
 
 const SignInText = styled.h2`
@@ -68,14 +62,7 @@ const ButtonContainer = styled.div`
 
 
 const LastText = styled.h4`
-
 margin: 0 0 2rem 0;
-
-`
-
-const LinkText = styled.a`
-
-color: yellow;
 `
 
 

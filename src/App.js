@@ -1,15 +1,15 @@
 import Theme from "./Theme";
-
-import SignIn from "./components/SignIn"
-
 import "./App.css";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+
+import Home from "./pages/Home";
+import { Header, Footer } from "./components";
+
 function App() {
   return (
     <Theme>
       <div className="App">
         <Header />
+        <Home/>
         <Footer />
       </div>
     </Theme>
