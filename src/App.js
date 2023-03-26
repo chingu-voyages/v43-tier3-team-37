@@ -1,4 +1,7 @@
 import Theme from "./Theme";
+
+import SignIn from "./components/SignIn"
+
 import "./App.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -8,6 +11,7 @@ function App() {
       <div className="App">
         <Header />
         <Footer />
+       <SignIn />
       </div>
     </Theme>
   );
