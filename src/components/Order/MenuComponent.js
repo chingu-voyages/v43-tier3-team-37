@@ -8,6 +8,7 @@ const Menu = () => {
       <Dishes dishes={dishesList} dishName="Starters" />
       <Dishes dishes={dishesList} dishName="Main Dishes" />
       <Dishes dishes={dishesList} dishName="Desserts" />
+      <Dishes dishes={dishesList} dishName="Drinks" />
     </div>
   );
 };

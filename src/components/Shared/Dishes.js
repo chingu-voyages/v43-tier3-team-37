@@ -78,5 +78,55 @@ const dishesList = [
     image:
       "https://images.unsplash.com/photo-1612408023917-c55a240e8f20?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fG1vemVsYXJyZWElMjBzdGlja3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
   },
+  {
+    id: 11,
+    name: "Tiramisu",
+    price: "$6.99",
+    image:
+      "https://images.unsplash.com/photo-1525295847127-b6fa481a0e8f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHRpcmFtaXN1JTIwYnJlYWQlMjBkZXNzZXJ0c3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+  },
+  {
+    id: 12,
+    name: "Chocolate Cake",
+    price: "$7.99",
+    image:
+      "https://images.unsplash.com/photo-1605170111452-86205c34fa85?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzR8fGNoYXRsZW5nZSUyMGNha2VzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+  },
+  {
+    id: 13,
+    name: "Fruit Salad",
+    price: "$5.99",
+    image:
+      "https://images.unsplash.com/photo-1505761671935-60b3a7427bad?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZnJ1aXRzJTIwc2FsYWQlMjBjb2xvclxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+  },
+  {
+    id: 14,
+    name: "Ice Cream Sundae",
+    price: "$4.99",
+    image:
+      "https://images.unsplash.com/photo-1567706070544-4c8e1d8444c4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aWNlJTIwY3JlYWx8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+  },
+  {
+    id: 15,
+    name: "Iced Tea",
+    price: "$2.99",
+    image:
+      "https://images.unsplash.com/photo-1584974497616-8c6b22915c05?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aWNlZCUyMHRlYXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+  },
+  {
+    id: 16,
+    name: "Lemonade",
+    price: "$2.99",
+    image:
+      "https://images.unsplash.com/photo-1584974600878-ee5c5f0a0e5e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bGVtb25hZGUlMjBjYWtlc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+  },
+  {
+    id: 17,
+    name: "Orange Juice",
+    price: "$3.99",
+    image:
+      "https://images.unsplash.com/photo-1519681393784-d120267933ba?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8b3JhbmdlJTIwanVpY2UlMjBjaGVjZWxsfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+  },
 ];
+
 export default dishesList;
