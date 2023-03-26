@@ -1,15 +1,55 @@
 import styled from "styled-components";
 
-export const Section = styled.section`
+export const HeroDiv = styled.div`
+height: 100%;
+background-color: ${({theme})=> theme.colors.darkgray};
+color: ${({theme})=> theme.colors.white};
+font-family: ${({ theme }) => theme.fonts[2]};
+`;
+
+export const IntroSection = styled.section`
+  max-width: 1300px;
+  margin: 0 auto;
+  height: fit-content;
+  padding-top: 2rem;
   display: flex;
   flex-direction: row;
-  
-  background-color: ${({ theme }) => theme.colors.darkblue};
-  height: 19rem;
+  justify-content: space-around;
+  background-color: ${({ theme }) => theme.colors.darkgray};
   font-family: ${({ theme }) => theme.fonts[2]};
-  gap: 230px;
-  align-items: center;
+
+  div {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  h3 {
+    color: white;
+    font-size: 90px;
+    font-weight: 500;
+    line-height: .8;
+    font-family: ${({ theme }) => theme.fonts[1]};
+  }
+
+  p {
+    font-style: normal;
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 126.5%;
+    padding: 1.5rem 0;
+  }
+
+  img {
+    width: 400px;
+    height: 500px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    box-shadow: 0px -3px 2px 15px #3e424a;
+  }
 `;
+
 export const About = styled.section`
 padding-top: 2rem;
 background: ${({ theme }) => theme.colors.lightpink};
@@ -57,20 +97,6 @@ p{
   font-size: 16px;
   color:#4A4A4A;
 }
-}
-
-
-
-`;
-export const Img = styled.img`
-  width: 14rem;
-  position: absolute;
-  right: 140px;
-  border-left-top-radius: 50%;
-  border-top-left-radius: 50%;
-  border-top-right-radius: 50%;
-  height: 16rem;
-  box-shadow: 0px -3px 2px 8px #6c6b6bb8;
 `;
 
 export const Pattern = styled.img`
@@ -78,27 +104,6 @@ export const Pattern = styled.img`
   position: relative;
   left: -40px;
   top: -40px;
-`;
-
-export const Div = styled.div`
-  text-align: initial;
-  margin-left: 225px;
-  color: ${({ theme }) => theme.colors.white};
-`;
-
-export const H3 = styled.h3`
-  color: white;
-  font-size: 3rem;
-  font-weight: 500;
-  padding: 0px;
-  margin: 0px;
-  font-family: ${({ theme }) => theme.fonts[1]};
-`;
-export const P = styled.p`
-  font-style: normal;
-  font-weight: 200;
-  font-size: 15px;
-  line-height: 126.5%;
 `;
 
 export const Icon = styled.div`
@@ -177,7 +182,7 @@ export const Menu = styled.section`
     }
     img{
       width:5em;
-      border-raduis: 50%;
+      border-radius: 50%;
     }
     
   }

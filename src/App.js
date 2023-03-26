@@ -1,7 +1,7 @@
 import Theme from "./Theme";
 import "./App.css";
 
-import Home from "./pages/Home/Home";
+import Home from "./pages/Home";
 import { Header, Footer } from "./components";
 
 function App() {
