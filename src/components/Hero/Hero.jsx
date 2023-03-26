@@ -1,4 +1,4 @@
-import React, {useContext} from 'react'
+import React from 'react';
 import { HeroDiv, H4 } from './Hero.styled';
 
 export default function Hero({hero}) {

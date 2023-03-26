@@ -1,16 +1,13 @@
 import Theme from "./Theme";
-import Hero from "./components/Hero/Hero";
-import Home from "./pages/Home/Home";
-
 import "./App.css";
-import Home from "./pages/Home";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+
+import Home from "./pages/Home/Home";
+import { Header, Footer } from "./components";
+
 function App() {
   return (
     <Theme>
       <div className="App">
-        <Home/>
         <Header />
         <Home/>
         <Footer />
