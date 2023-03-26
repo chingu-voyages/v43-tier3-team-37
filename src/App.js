@@ -1,4 +1,6 @@
 import Theme from "./Theme";
+import Hero from "./components/Hero/Hero";
+import Home from "./pages/Home/Home";
 
 import "./App.css";
 import Home from "./pages/Home";
@@ -10,6 +12,7 @@ function App() {
       <div className="App">
         <Home/>
         <Header />
+        <Home/>
         <Footer />
       </div>
     </Theme>
