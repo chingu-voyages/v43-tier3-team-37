@@ -1,27 +1,46 @@
 import styled from "styled-components";
 
-export const ThemeButton = styled.button`
-  font-size: 15px;
+export const SecondaryButton = styled.button`
+  font-size: ${(props) => (props.size ? props.size : "18px")};
   font-family: ${({ theme }) => theme.fonts[2]};
-  border: 1px solid ${({ theme }) => theme.colors.softorange};
-  background: ${({theme})=> theme.colors.white};
+  border: 2px solid ${({ theme }) => theme.colors.softorange};
+  background: ${({ theme }) => theme.colors.white};
   width: 145px;
   height: 40px;
   cursor: pointer;
- 
+
+  &:hover {
+    opacity: 0.9;
+    border-color: transparent;
+  }
 `;
 
-export const ThemeFillButton = styled.button`
-  font-size: 18px;
+export const PrimaryButton = styled.button`
+  font-size: ${(props) => (props.size ? props.size : "18px")};
   font-family: ${({ theme }) => theme.fonts[2]};
-  border: 1px solid ${({ theme }) => theme.colors.softorange};
-  background: ${({theme})=> theme.colors.softorange};
+  border: 2px solid ${({ theme }) => theme.colors.softorange};
+  background: ${({ theme }) => theme.colors.softorange};
   width: 145px;
   height: 40px;
+  color: ${({ theme }) => theme.colors.darkgray};
   cursor: pointer;
- 
+  transition: opacity 300ms ease-in-out;
+
+  &:hover {
+    opacity: 0.7;
+  }
 `;
-export const Button = styled(ThemeButton)`
-  background: initial;
-  color: ${(props) => props.color ? props.color :props.theme.colors.white};
+export const TertiaryButton = styled.button`
+  font-size: ${(props) => (props.size ? props.size : "18px")};
+  font-family: ${({ theme }) => theme.fonts[2]};
+  border: 2px solid ${({ theme }) => theme.colors.softorange};
+  background: transparent;
+  width: 145px;
+  height: 40px;
+  color: #ffffff;
+  transition: border-color 150ms ease-in-out;
+  cursor: pointer;
+  &:hover {
+    border-color: ${({ theme }) => theme.colors.lightpink};
+  }
 `;
