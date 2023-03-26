@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "../../styles/ThemeButton.styled";
+import { TertiaryButton } from "../../styles/ThemeButton.styled";
 import {
   Section,
   Img,
@@ -30,7 +30,7 @@ export default function Home() {
             Simply dummy text of the printing and typesetting industry. Lorem
             Ipsum has been the industry's standard dummy.
           </P>
-          <Button>View Menu</Button>
+          <TertiaryButton>View Menu</TertiaryButton>
         </Div>
 
         <div>
@@ -105,13 +105,13 @@ export default function Home() {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo fugiat
             laborum autem obcaecati assumenda amet aliquam ipsam doloremqu
           </p>
-          <img src={Cake}></img>
-          <Button color="#e1b168">See all dishes</Button>
+          <img src={Cake} alt="cake"></img>
+          <TertiaryButton>See all dishes</TertiaryButton>
         </div>
         <div className="right-side">
           <h4>Main Dishs</h4>
           <div className="item">
-            <img src={Pizza}></img>
+            <img src={Pizza} alt="Pizza"></img>
             <div>
               <h5>Raw Scallops from Erquy</h5>
               <p>Candied Jerusalem artichokes, truffle</p>
