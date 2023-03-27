@@ -1,4 +1,4 @@
-const dishesList = [
+const dishes = [
   {
     id: 1,
     dishType: "Main Dishes",
@@ -129,4 +129,4 @@ const dishesList = [
   },
 ];
 
-export default dishesList;
+export default dishes;
