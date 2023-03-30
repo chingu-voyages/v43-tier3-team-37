@@ -1,16 +1,13 @@
 import Theme from "./Theme";
 import "./App.css";
+import AppRouting from './AppRouting.js';
 
-import Home from "./pages/Home";
-import { Header, Footer } from "./components";
 
 function App() {
   return (
     <Theme>
       <div className="App">
-        <Header />
-        <Home/>
-        <Footer />
+        <AppRouting/>
       </div>
     </Theme>
   );

@@ -6,6 +6,7 @@ import logoImg from "../../assets/images/logo.png";
 import cartIcon from "../../assets/icons/cart.png";
 import userIcon from "../../assets/icons/user.png";
 import SocialStack from "./SocialStack";
+import {Link, useNavigate} from 'react-router-dom';
 const MainHeader = styled.header`
   background-color: ${({ theme }) => theme.colors.darkgray};
 `;
@@ -98,6 +99,7 @@ const NavMenu = styled.div`
 `;
 
 function Header() {
+  const nevigate= useNavigate();
   return (
     <MainHeader>
       <HeaderWrapper>
@@ -113,7 +115,7 @@ function Header() {
             <div className="icon">
               <img src={cartIcon} alt="cart icon" />
             </div>
-            <PrimaryButton size="14px">order now</PrimaryButton>
+            <PrimaryButton size="14px" onClick={()=>nevigate('/menu')}>order now</PrimaryButton>
 
             <div className="icon">
               <img src={userIcon} alt="user icon" />
@@ -125,9 +127,9 @@ function Header() {
         <HeaderWrapper>
           <Navbar>
             <NavMenu>
-              <a href="/">Home</a>
-              <a href="/">Menu</a>
-              <a href="/">Contact</a>
+              <Link to='/'>Home</Link>
+              <Link to='/menu'>Menu</Link>
+              <Link to='/contact'>Contact</Link>
             </NavMenu>
             <div className="socials">
               <SocialStack />
