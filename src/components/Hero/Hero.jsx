@@ -16,8 +16,10 @@ import View from "../../assets/images/View.png";
 import Pattern from "../../assets/images/Pattern.png";
 import Cake from "../../assets/images/cake.png";
 import Pizza from "../../assets/images/pizza2.png";
+import {useNavigate} from 'react-router-dom';
 
 export default function Hero() {
+  const nevigate = useNavigate();
   return (
     <HeroDiv>
         <IntroSection>
@@ -27,7 +29,7 @@ export default function Hero() {
               crafted with passion, using only the freshest ingredients
               sourced from local farmers and producers.
             </p>
-            <TertiaryButton>View Menu</TertiaryButton>
+            <TertiaryButton onClick={()=>nevigate('/menu')}>View Menu</TertiaryButton>
           </div>
             <img src={Photo} alt="img of restaurantate" />
         </IntroSection>
